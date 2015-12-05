@@ -1,4 +1,5 @@
 // sample dnode client
+//   inspired by http://substack.net/roll_your_own_pubsub_with_dnode
 
 var dnode = require('dnode');
 var EventEmitter = require('events').EventEmitter;
