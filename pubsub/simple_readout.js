@@ -4,7 +4,6 @@
 var five = require('johnny-five');
 
 var board = new five.Board({
-  port: '/dev/cu.PL2303-00001214',
   repl: false
 });
 

@@ -14,8 +14,8 @@ function publish() {
 }
 
 // subscribers for testing purposes
-subscribers.slider = function (ev, n) { console.log('slider.' + ev + ': ' + n) };
-subscribers.button = function (ev, n) { console.log('button.' + ev + ': ' + n) };
+subscribers.channel1 = function (ev, n) { console.log('channel1.' + ev + ': ' + n) };
+subscribers.channel2 = function (ev, n) { console.log('channel2.' + ev + ': ' + n) };
 
 // startup board
 //    button on digital input: D4
@@ -23,7 +23,6 @@ subscribers.button = function (ev, n) { console.log('button.' + ev + ': ' + n) }
 //
 var five = require('johnny-five');
 var board = new five.Board({
-  port: '/dev/cu.PL2303-00002214',
   repl: false
 });
 
